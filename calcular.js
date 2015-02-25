@@ -72,6 +72,18 @@
   }
   
  }
+  function seno(){
+  operacion='sen';
+  numeros= document.getElementById("caja").value;
+  resultado=Math.sin(numeros)
+  document.getElementById('caja').value='';
+ }
+
+  function raiz(){
+  operacion='rz';
+  document.getElementById('caja').value=Math.sqrt(document.getElementById('caja').value)
+  document.getElementById('caja').value='';
+ }
 
  function igual(){
 
@@ -112,6 +124,7 @@
  if(operacion=='rz'){
    raiz();   
    document.getElementById('caja').value=r;
+
   }
  }
 
@@ -129,14 +142,9 @@
   n1=0;
  }
 
-/* function seno(){
-   operacion='sen';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.sin(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }
 
-function coseno()){
+
+/*function coseno()){
    operacion='cos';
    n1=parseInt(document.getElementById('caja').value);
    n1=Math.cos(document.getElementById('caja').value)
@@ -150,9 +158,4 @@ function coseno()){
    document.getElementById('caja').value='';
  }
 
- function raiz(){
-   operacion='rz';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.sqrt(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }*/
+*/
