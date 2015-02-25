@@ -1,37 +1,53 @@
 <html>
-<link>
 <head>
+  <meta charset="utf8">
 	<title>CALCULADORA</title>
+  <script type="text/javascript" src="calcular.js"></script>
+  <style>
+  input [type=button],input [type=text]
+  {
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+  }
+  table,form{
+    width:500px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  </style>
 </head>
 <body>
+  <form ="fo">
 <section>
-  <ul class="buttons">
-  	<div><input type="text" name="nombredelacaja"></div>
- <div><input type="submit" value="0" />
-  <input type="submit" value="1" />
-   <input type="submit" value="2" />
-    <input type="submit" value="3" />
-     <input type="submit" value="4" />
-      <input type="submit" value="5" />
-       <input type="submit" value="6" />
-        <input type="submit" value="7" />
-         <input type="submit" value="8" />
-          <input type="submit" value="9" />  </div>
-        
-   <div><input type="submit" value="+" />
-   <input type="submit" value="-" />
-    <input type="submit" value="*" />
-     <input type="submit" value="/" />
-      <input type="submit" value="raiz" />
-       <input type="submit" value="^2" /> </div>
 
-  <div><input type="submit" value="sen x" />
-   <input type="submit" value="cos x" />
-    <input type="submit" value="tan x" />
-     <input type="submit" value="=" />
+ 	<div><input type="text" name="valores" id="valores"></div>
+ <div><input type="button" value="0" onclick="mostrar(value)"/>
+  <input type="button" value="1" onClick="mostrar(value)"/>
+   <input type="button" value="2"onclick="mostrar(value)" />
+    <input type="button" value="3" onclick="mostrar(value)"/>
+     <input type="button" value="4" onclick="mostrar(value)"/>
+      <input type="button" value="5" onclick="mostrar(value)"/>
+       <input type="button" value="6" onclick="mostrar(value)"/>
+        <input type="button" value="7" onclick="mostrar(value)" />
+         <input type="button" value="8" onclick="mostrar(value)"/>
+          <input type="button" value="9" onclick="mostrar(value)"/>  </div>
+        
+   <div><input type="button" value="+" onclick="calcular('+')/>
+   <input type="button" value="-" onclick="calcular('+') />
+    <input type="button" value="*" onclick="calcula('+') />
+     <input type="button" value="/" onclick="calcular('+')/>
+      <input type="button" value="raiz" onclick="calcular('+') />
+       <input type="button" value="^2"  onclick="calcular('+') /> </div>
+
+  <div><input type="button" value="sen x" />
+   <input type="button" value="cos x" />
+    <input type="button" value="tan x" />
+     <input type="button" value="=" onclick="calcular()" />
     </div>
       
-</ul>
+
     </section>
+  </form>
 </body>
 </html>
