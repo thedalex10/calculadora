@@ -155,12 +155,12 @@ function raiz(){
   }
  if(operacion=='rz'){
    raiz();   
-<<<<<<< HEAD
+
    document.getElementById('caja').value=acum;
    acum=0;
-=======
-   document.getElementById('caja').value=r;
->>>>>>> 832d29e3f0b89e7f1bd6bf98352f6769a575922d
+
+  
+
 
   }
  }
@@ -179,11 +179,9 @@ function raiz(){
   n1=0;
  }
 
-<<<<<<< HEAD
+
 
   
-=======
-
 
 /*function coseno()){
    operacion='cos';
@@ -200,4 +198,4 @@ function raiz(){
  }
 
 */
->>>>>>> 832d29e3f0b89e7f1bd6bf98352f6769a575922d
+
