@@ -72,6 +72,18 @@
   }
   
  }
+  function seno(){
+  operacion='sen';
+  numeros= document.getElementById("caja").value;
+  resultado=Math.sin(numeros)
+  document.getElementById('caja').value='';
+ }
+
+  function raiz(){
+  operacion='rz';
+  document.getElementById('caja').value=Math.sqrt(document.getElementById('caja').value)
+  document.getElementById('caja').value='';
+ }
 
 function raiz(){
    operacion='rz';
@@ -143,8 +155,12 @@ function raiz(){
   }
  if(operacion=='rz'){
    raiz();   
+<<<<<<< HEAD
    document.getElementById('caja').value=acum;
    acum=0;
+=======
+   document.getElementById('caja').value=r;
+>>>>>>> 832d29e3f0b89e7f1bd6bf98352f6769a575922d
 
   }
  }
@@ -163,5 +179,25 @@ function raiz(){
   n1=0;
  }
 
+<<<<<<< HEAD
 
   
+=======
+
+
+/*function coseno()){
+   operacion='cos';
+   n1=parseInt(document.getElementById('caja').value);
+   n1=Math.cos(document.getElementById('caja').value)
+   document.getElementById('caja').value='';
+ }
+
+ function tangente(){
+   operacion='tan';
+   n1=parseInt(document.getElementById('caja').value);
+   n1=Math.tan(document.getElementById('caja').value)
+   document.getElementById('caja').value='';
+ }
+
+*/
+>>>>>>> 832d29e3f0b89e7f1bd6bf98352f6769a575922d
