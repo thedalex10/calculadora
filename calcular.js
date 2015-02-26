@@ -73,6 +73,34 @@
   
  }
 
+function raiz(){
+   operacion='rz';
+  n1=document.getElementById('caja').value
+  acum=Math.sqrt(parseInt(n1))
+
+ }
+ function seno(){
+   operacion='sen';
+  n1=document.getElementById('caja').value
+  acum=Math.sin(parseInt(n1))
+
+ }
+
+ function coseno(){
+   operacion='cos';
+  n1=document.getElementById('caja').value
+  acum=Math.sqrt(parseInt(n1))
+
+ }
+
+ function tangente(){
+   operacion='tan';
+  n1=document.getElementById('caja').value
+  acum=Math.tan(parseInt(n1))
+
+ }
+
+
  function igual(){
 
   if(operacion=='suma'){
@@ -99,19 +127,25 @@
   }
   if(operacion=='sen'){
    seno();   
-   document.getElementById('caja').value=r;
+   document.getElementById('caja').value=acum;
+   acum=0;
   }
    if(operacion=='cos'){
    coseno();   
-   document.getElementById('caja').value=r;
+   document.getElementById('caja').value=acum;
+   acum=0;
+
   }
    if(operacion=='tan'){
    tangente();   
-   document.getElementById('caja').value=r;
+   document.getElementById('caja').value=acum;
+   acum=0;
   }
  if(operacion=='rz'){
    raiz();   
-   document.getElementById('caja').value=r;
+   document.getElementById('caja').value=acum;
+   acum=0;
+
   }
  }
 
@@ -129,30 +163,5 @@
   n1=0;
  }
 
-/* function seno(){
-   operacion='sen';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.sin(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }
 
-function coseno()){
-   operacion='cos';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.cos(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }
-
- function tangente(){
-   operacion='tan';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.tan(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }
-
- function raiz(){
-   operacion='rz';
-   n1=parseInt(document.getElementById('caja').value);
-   n1=Math.sqrt(document.getElementById('caja').value)
-   document.getElementById('caja').value='';
- }*/
+  
